@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === 'production') {
 
 const authRoutes = require('./api/auth/auth.routes')
 const userRoutes = require('./api/user/user.routes')
-const carRoutes = require('./api/car/car.routes')
+const carRoutes = require('./api/toy/toy.routes')
 
 
 // routes

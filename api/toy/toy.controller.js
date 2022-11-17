@@ -30,6 +30,8 @@ async function getToyById(req, res) {
 async function addToy(req, res) {
   try {
     const toy = req.body
+    console.log('toy:', toy)
+    
     const addedToy = await toyService.add(toy)
     res.json(addedToy)
   } catch (err) {

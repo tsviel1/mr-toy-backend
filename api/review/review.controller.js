@@ -21,8 +21,6 @@ async function getReviews(req, res) {
 async function addReview(req, res) {
   try {
     const review = req.body
-    console.log('review', review)
-    console.log('req.cookie', req.cookies)
     
     const addedReview = await reviewService.addReview(review)
     res.send(addedReview)
